@@ -1,0 +1,1731 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>MeshValmetGUI</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>MVGui</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1072</width>
+            <height>792</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>MeshValmet</string>
+    </property>
+    <property name="layoutMargin" stdset="0">
+    </property>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>GroupBox4</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>435</y>
+                <width>158</width>
+                <height>346</height>
+            </rect>
+        </property>
+        <property name="sizePolicy">
+            <sizepolicy>
+                <hsizetype>0</hsizetype>
+                <vsizetype>0</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+            </sizepolicy>
+        </property>
+        <property name="title">
+            <string>Colormap Control</string>
+        </property>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>ColormapMax</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>45</x>
+                    <y>195</y>
+                    <width>80</width>
+                    <height>22</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>TextLabel7_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>15</x>
+                    <y>165</y>
+                    <width>30</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Min</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>TextLabel6_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>15</x>
+                    <y>195</y>
+                    <width>30</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Max</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>ColormapMin</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>45</x>
+                    <y>165</y>
+                    <width>80</width>
+                    <height>22</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>TextLabel1_5</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>5</x>
+                    <y>234</y>
+                    <width>60</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Interval</string>
+            </property>
+        </widget>
+        <widget class="QSpinBox">
+            <property name="name">
+                <cstring>IntervalSpinBox</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>65</x>
+                    <y>234</y>
+                    <width>60</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="maxValue">
+                <number>10</number>
+            </property>
+            <property name="minValue">
+                <number>1</number>
+            </property>
+            <property name="value">
+                <number>5</number>
+            </property>
+        </widget>
+        <widget class="ColormapWidget">
+            <property name="name">
+                <cstring>colortable</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>36</x>
+                    <y>44</y>
+                    <width>20</width>
+                    <height>110</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>TextLabel3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>60</x>
+                    <y>80</y>
+                    <width>60</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>0</string>
+            </property>
+        </widget>
+        <widget class="QSlider">
+            <property name="name">
+                <cstring>middleSlider</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>40</y>
+                    <width>20</width>
+                    <height>110</height>
+                </rect>
+            </property>
+            <property name="minValue">
+                <number>-110</number>
+            </property>
+            <property name="maxValue">
+                <number>110</number>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>TextLabel5</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>60</x>
+                    <y>40</y>
+                    <width>70</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>In Max</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>TextLabel1_3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>55</x>
+                    <y>135</y>
+                    <width>80</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Out Max</string>
+            </property>
+        </widget>
+        <widget class="QToolButton">
+            <property name="name">
+                <cstring>UpdateColorButton</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>15</x>
+                    <y>274</y>
+                    <width>100</width>
+                    <height>32</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Update Color</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout4</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>424</x>
+                <y>37</y>
+                <width>275</width>
+                <height>34</height>
+            </rect>
+        </property>
+        <grid>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QLabel" row="0" column="0">
+                <property name="name">
+                    <cstring>TextLabel2_2</cstring>
+                </property>
+                <property name="text">
+                    <string>Model B:</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit" row="0" column="1">
+                <property name="name">
+                    <cstring>model2Name</cstring>
+                </property>
+                <property name="enabled">
+                    <bool>false</bool>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+            </widget>
+            <widget class="QToolButton" row="0" column="2">
+                <property name="name">
+                    <cstring>model2OpenButton</cstring>
+                </property>
+                <property name="text">
+                    <string>Open...</string>
+                </property>
+            </widget>
+        </grid>
+    </widget>
+    <widget class="QCheckBox">
+        <property name="name">
+            <cstring>ColormapCheckbox1</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>175</x>
+                <y>402</y>
+                <width>139</width>
+                <height>22</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Show Colormap</string>
+        </property>
+    </widget>
+    <widget class="QCheckBox">
+        <property name="name">
+            <cstring>ColormapCheckbox2</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>560</x>
+                <y>402</y>
+                <width>139</width>
+                <height>22</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Show Colormap</string>
+        </property>
+    </widget>
+    <widget class="QToolButton">
+        <property name="name">
+            <cstring>model1SwitchButton</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>397</y>
+                <width>158</width>
+                <height>32</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Fill/Line/Point</string>
+        </property>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>37</y>
+                <width>303</width>
+                <height>34</height>
+            </rect>
+        </property>
+        <grid>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QLabel" row="0" column="0">
+                <property name="name">
+                    <cstring>TextLabel1_2</cstring>
+                </property>
+                <property name="text">
+                    <string>Model A:</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit" row="0" column="1">
+                <property name="name">
+                    <cstring>model1Name</cstring>
+                </property>
+                <property name="enabled">
+                    <bool>false</bool>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+            </widget>
+            <widget class="QToolButton" row="0" column="2">
+                <property name="name">
+                    <cstring>model1OpenButton</cstring>
+                </property>
+                <property name="text">
+                    <string>Open...</string>
+                </property>
+                <property name="textLabel">
+                    <string></string>
+                </property>
+            </widget>
+        </grid>
+    </widget>
+    <widget class="QToolButton">
+        <property name="name">
+            <cstring>model2SwitchButton</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>424</x>
+                <y>397</y>
+                <width>130</width>
+                <height>32</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Fill/Line/Point</string>
+        </property>
+    </widget>
+    <spacer>
+        <property name="name">
+            <cstring>Spacer2</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Vertical</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Fixed</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>20</width>
+                <height>20</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>80</x>
+                <y>11</y>
+                <width>20</width>
+                <height>20</height>
+            </rect>
+        </property>
+    </spacer>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>320</x>
+                <y>77</y>
+                <width>98</width>
+                <height>314</height>
+            </rect>
+        </property>
+        <grid>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QSpinBox" row="1" column="0">
+                <property name="name">
+                    <cstring>DownsamplingSpinBox</cstring>
+                </property>
+                <property name="enabled">
+                    <bool>false</bool>
+                </property>
+                <property name="maxValue">
+                    <number>30</number>
+                </property>
+                <property name="minValue">
+                    <number>1</number>
+                </property>
+                <property name="value">
+                    <number>15</number>
+                </property>
+            </widget>
+            <widget class="QSlider" row="0" column="0">
+                <property name="name">
+                    <cstring>DownsamplingSlider</cstring>
+                </property>
+                <property name="minValue">
+                    <number>1</number>
+                </property>
+                <property name="maxValue">
+                    <number>30</number>
+                </property>
+                <property name="value">
+                    <number>15</number>
+                </property>
+                <property name="orientation">
+                    <enum>Vertical</enum>
+                </property>
+            </widget>
+        </grid>
+    </widget>
+    <widget class="vtkQtRenderWindow">
+        <property name="name">
+            <cstring>renWin2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>424</x>
+                <y>77</y>
+                <width>275</width>
+                <height>314</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="vtkQtRenderWindow">
+        <property name="name">
+            <cstring>renWin1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>77</y>
+                <width>303</width>
+                <height>314</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout9</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>705</x>
+                <y>37</y>
+                <width>262</width>
+                <height>354</height>
+            </rect>
+        </property>
+        <grid>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QButtonGroup" row="1" column="0">
+                <property name="name">
+                    <cstring>ButtonGroup1</cstring>
+                </property>
+                <property name="sizePolicy">
+                    <sizepolicy>
+                        <hsizetype>0</hsizetype>
+                        <vsizetype>0</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                    </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                    <size>
+                        <width>250</width>
+                        <height>0</height>
+                    </size>
+                </property>
+                <property name="title">
+                    <string>Compute settings - (step2)</string>
+                </property>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>symmetricRadio</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>21</x>
+                            <y>67</y>
+                            <width>104</width>
+                            <height>17</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>A-&gt;B &amp; B-&gt;A</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>b2aRadio</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>21</x>
+                            <y>44</y>
+                            <width>104</width>
+                            <height>17</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>B-&gt;A</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>a2bRadio</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>21</x>
+                            <y>21</y>
+                            <width>104</width>
+                            <height>17</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>A-&gt;B</string>
+                    </property>
+                    <property name="checked">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>BinsSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>91</x>
+                            <y>90</y>
+                            <width>54</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="maxValue">
+                        <number>1000</number>
+                    </property>
+                    <property name="minValue">
+                        <number>1</number>
+                    </property>
+                    <property name="value">
+                        <number>256</number>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>TextLabel11</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>21</x>
+                            <y>90</y>
+                            <width>64</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string># of bins:</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QGroupBox" row="0" column="0">
+                <property name="name">
+                    <cstring>GroupBox1</cstring>
+                </property>
+                <property name="sizePolicy">
+                    <sizepolicy>
+                        <hsizetype>0</hsizetype>
+                        <vsizetype>0</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                    </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                    <size>
+                        <width>250</width>
+                        <height>120</height>
+                    </size>
+                </property>
+                <property name="title">
+                    <string>Properties - (step1)</string>
+                </property>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>samplingStep</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>110</x>
+                            <y>20</y>
+                            <width>30</width>
+                            <height>22</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>0.5</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>minSamplingFq</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>200</x>
+                            <y>91</y>
+                            <width>50</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>2</string>
+                    </property>
+                </widget>
+                <widget class="QListBox">
+                    <item>
+                        <property name="text">
+                            <string>2</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>1</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>0.5</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>0.2</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>0.1</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>0.05</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>0.02</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>stepList</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>150</x>
+                            <y>20</y>
+                            <width>97</width>
+                            <height>60</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>TextLabel1</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>20</y>
+                            <width>90</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Sampling step (%)</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>TextLabel2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>90</y>
+                            <width>185</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Minimum sampling frequency</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QButtonGroup" row="2" column="0">
+                <property name="name">
+                    <cstring>ButtonGroup2</cstring>
+                </property>
+                <property name="sizePolicy">
+                    <sizepolicy>
+                        <hsizetype>0</hsizetype>
+                        <vsizetype>0</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                    </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                    <size>
+                        <width>250</width>
+                        <height>0</height>
+                    </size>
+                </property>
+                <property name="title">
+                    <string>Compute - (Step3)</string>
+                </property>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>AbsRadio</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>0</x>
+                            <y>40</y>
+                            <width>130</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Abs Distance</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>SignedRadio</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>0</x>
+                            <y>20</y>
+                            <width>140</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Signed Distance</string>
+                    </property>
+                    <property name="checked">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QToolButton">
+                    <property name="name">
+                        <cstring>ComputeButton</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>140</x>
+                            <y>20</y>
+                            <width>111</width>
+                            <height>32</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Compute Error</string>
+                    </property>
+                    <property name="autoResize">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </widget>
+        </grid>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>GroupBox3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>841</x>
+                <y>399</y>
+                <width>220</width>
+                <height>132</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Histogram Control</string>
+        </property>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>HistYMin</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>150</x>
+                    <y>20</y>
+                    <width>60</width>
+                    <height>22</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>HistXMin</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>50</x>
+                    <y>20</y>
+                    <width>50</width>
+                    <height>22</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QToolButton">
+            <property name="name">
+                <cstring>UpdateHistButton</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>30</x>
+                    <y>80</y>
+                    <width>140</width>
+                    <height>32</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Update Histogram</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>HistXMax</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>50</x>
+                    <y>49</y>
+                    <width>50</width>
+                    <height>22</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>TextLabel1_7</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>XMin</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>TextLabel2_5</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>49</y>
+                    <width>40</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>XMax</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>TextLabel4_3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>110</x>
+                    <y>49</y>
+                    <width>39</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>YMax</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>TextLabel3_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>110</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>YMin</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>HistYMax</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>150</x>
+                    <y>50</y>
+                    <width>60</width>
+                    <height>22</height>
+                </rect>
+            </property>
+        </widget>
+    </widget>
+    <widget class="vtkQtRenderWindow">
+        <property name="name">
+            <cstring>renWin</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>175</x>
+                <y>435</y>
+                <width>658</width>
+                <height>346</height>
+            </rect>
+        </property>
+        <property name="sizePolicy">
+            <sizepolicy>
+                <hsizetype>5</hsizetype>
+                <vsizetype>5</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+            </sizepolicy>
+        </property>
+    </widget>
+    <widget class="QTabWidget">
+        <property name="name">
+            <cstring>TabWidget2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>840</x>
+                <y>530</y>
+                <width>200</width>
+                <height>240</height>
+            </rect>
+        </property>
+        <property name="sizePolicy">
+            <sizepolicy>
+                <hsizetype>0</hsizetype>
+                <vsizetype>0</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+            </sizepolicy>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>200</width>
+                <height>240</height>
+            </size>
+        </property>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tab</cstring>
+            </property>
+            <attribute name="title">
+                <string>Stats 1</string>
+            </attribute>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel8</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>170</y>
+                        <width>90</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>FaceErr RMS</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel7</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>140</y>
+                        <width>97</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>FaceErr Mean</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel2_4</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>50</y>
+                        <width>109</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>SampleErr STD</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel1_4</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>20</y>
+                        <width>118</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>SampleErr Mean</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel6</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>110</y>
+                        <width>110</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>SampleErr Max</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel5_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>80</y>
+                        <width>105</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>SampleErr Min</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>StdMeanEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>120</x>
+                        <y>20</y>
+                        <width>70</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>SigmaEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>120</x>
+                        <y>50</y>
+                        <width>70</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+                <property name="sizePolicy">
+                    <sizepolicy>
+                        <hsizetype>5</hsizetype>
+                        <vsizetype>5</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                    </sizepolicy>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>MinEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>120</x>
+                        <y>80</y>
+                        <width>70</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>MaxEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>120</x>
+                        <y>110</y>
+                        <width>70</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>MeanEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>120</x>
+                        <y>140</y>
+                        <width>70</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>RMSEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>120</x>
+                        <y>170</y>
+                        <width>70</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tab</cstring>
+            </property>
+            <attribute name="title">
+                <string>Stats 2</string>
+            </attribute>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>MADEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>103</x>
+                        <y>80</y>
+                        <width>90</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel1_6</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>20</y>
+                        <width>70</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Hausdorff</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel2_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>50</y>
+                        <width>53</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>MSD</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel6_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>110</y>
+                        <width>103</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Dice's</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>HausdorffEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>103</x>
+                        <y>20</y>
+                        <width>90</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>MSDEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>103</x>
+                        <y>50</y>
+                        <width>90</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel3_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>80</y>
+                        <width>53</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>MAD</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>DiceEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>103</x>
+                        <y>110</y>
+                        <width>90</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>130</y>
+                        <width>95</width>
+                        <height>37</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Inter / Union</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>IntUnionEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>103</x>
+                        <y>142</y>
+                        <width>90</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>TabPage</cstring>
+            </property>
+            <attribute name="title">
+                <string>Stats 3</string>
+            </attribute>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>Percentile68Edit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>103</x>
+                        <y>80</y>
+                        <width>90</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel5_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>50</y>
+                        <width>53</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Median</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel4</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>80</y>
+                        <width>94</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>68 Percentile</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>110</y>
+                        <width>94</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>75 Percentile</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>Percentile25Edit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>103</x>
+                        <y>22</y>
+                        <width>90</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>TextLabel4_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>140</y>
+                        <width>94</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>95 Percentile</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>MedianEdit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>103</x>
+                        <y>50</y>
+                        <width>90</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>Percentile75Edit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>103</x>
+                        <y>110</y>
+                        <width>90</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>Percentile95Edit</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>103</x>
+                        <y>140</y>
+                        <width>90</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>20</y>
+                        <width>93</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>25 Percentile</string>
+                </property>
+            </widget>
+        </widget>
+    </widget>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>vtkQtRenderWindow</class>
+        <header location="local">vtkQtRenderWindow.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+    </customwidget>
+    <customwidget>
+        <class>ColormapWidget</class>
+        <header location="local">ColormapWidget.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="PNG" length="258">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000c949444154388dad55c91183300c8c341440136e862ed3842b60dc04bd405e62b0b23aec645f0c927675d9a6d6dacbc3716e17fa5fb89217b78c90211f4b806748b53f8a61ed3442eac52e964160958afc8f73bbc4ffab1519d2c8761323752fd01b9cd860c619d2682be8bdaf5db61952e4af6d6e8fb3a408f080448419a433d6486d85052fdba812d6ca7aeab3c266c6a8546b6fb540e14a9018eda87c47bded32f64e50e14ada9e219f1e9e0511a5e70bf2cbb5a9d1659ceddf30b1908f0aa019d03f1fd3e745ff01fb6c8d994fda162e0000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>model1OpenButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MVGui</receiver>
+        <slot>Model1Open()</slot>
+    </connection>
+    <connection>
+        <sender>model2OpenButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MVGui</receiver>
+        <slot>Model2Open()</slot>
+    </connection>
+    <connection>
+        <sender>model1SwitchButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MVGui</receiver>
+        <slot>Model1Switch()</slot>
+    </connection>
+    <connection>
+        <sender>model2SwitchButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MVGui</receiver>
+        <slot>Model2Switch()</slot>
+    </connection>
+    <connection>
+        <sender>stepList</sender>
+        <signal>highlighted(const QString&amp;)</signal>
+        <receiver>MVGui</receiver>
+        <slot>SelectStep(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>DownsamplingSlider</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DownsamplingSpinBox</receiver>
+        <slot>setValue(int)</slot>
+    </connection>
+    <connection>
+        <sender>DownsamplingSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DownsamplingSlider</receiver>
+        <slot>setValue(int)</slot>
+    </connection>
+    <connection>
+        <sender>ComputeButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MVGui</receiver>
+        <slot>Compute()</slot>
+    </connection>
+    <connection>
+        <sender>middleSlider</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>MVGui</receiver>
+        <slot>middleSliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>UpdateColorButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MVGui</receiver>
+        <slot>UpdateColor()</slot>
+    </connection>
+    <connection>
+        <sender>ColormapCheckbox1</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>MVGui</receiver>
+        <slot>ColormapCheckbox1Changed(bool)</slot>
+    </connection>
+    <connection>
+        <sender>DownsamplingSlider</sender>
+        <signal>sliderReleased()</signal>
+        <receiver>MVGui</receiver>
+        <slot>ChangeSamplingSlider()</slot>
+    </connection>
+    <connection>
+        <sender>UpdateHistButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MVGui</receiver>
+        <slot>UpdateHistogram()</slot>
+    </connection>
+    <connection>
+        <sender>ColormapCheckbox2</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>MVGui</receiver>
+        <slot>ColormapCheckbox2Changed(bool)</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>ChangeSamplingSlider()</slot>
+    <slot>CheckTextWindow()</slot>
+    <slot>ColormapCheckbox1Changed(bool)</slot>
+    <slot>ColormapCheckbox2Changed(bool)</slot>
+    <slot>Compute()</slot>
+    <slot>ComputeHistogram()</slot>
+    <slot>Model1Open()</slot>
+    <slot>Model1Switch()</slot>
+    <slot>Model2Open()</slot>
+    <slot>Model2Switch()</slot>
+    <slot>OutputHistogram()</slot>
+    <slot>OutputRawErrors()</slot>
+    <slot>OutputStats()</slot>
+    <slot>OutputVertexErrors()</slot>
+    <slot>ResetCameras()</slot>
+    <slot>SaveModel1()</slot>
+    <slot>SaveModel2()</slot>
+    <slot>SelectStep(const QString&amp;)</slot>
+    <slot>SwitchOverlay()</slot>
+    <slot>SwitchSync()</slot>
+    <slot>UpdateColor()</slot>
+    <slot>UpdateHistogram()</slot>
+    <slot>middleSliderMoved(int)</slot>
+    <slot>SwitchBackground()</slot>
+    <slot>AboutMeshValmet()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>ColormapWidget.h</includehint>
+    <includehint>vtkQtRenderWindow.h</includehint>
+    <includehint>vtkQtRenderWindow.h</includehint>
+    <includehint>vtkQtRenderWindow.h</includehint>
+</includehints>
+</UI>
