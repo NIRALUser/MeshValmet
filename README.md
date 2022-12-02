@@ -1,6 +1,6 @@
-#MeshValmet: Validation Metric for Meshes
+# MeshValmet: Validation Metric for Meshes
 
-##What is it?
+## What is it?
 
 MeshValmet is a tool that measures surface to surface distance between two triangle meshes using user-specified uniform sampling. Thus, users can choose finer sampling level to calculate errors to gain more accuracy in the "error space", or sparser sampling to gain speed and get an approximate feeling of error distribution between boundaries.
 
@@ -10,11 +10,11 @@ MeshValmet is based on the work of Nicolas Aspert, etc.: MESH: Measuring Errors 
 
 The calculation of the Dice's Coefficient is calculated by Joshua Stough using the concept of a Riemannian sum.
 
-##License
+## License
 
 See License.txt
 
-##More information
+## More information
 
 Find the tool on [NITRC](http://www.nitrc.org/projects/meshvalmet)
 
